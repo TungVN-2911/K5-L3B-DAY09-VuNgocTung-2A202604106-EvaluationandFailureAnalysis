@@ -2,8 +2,8 @@
 
 Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10. Mọi số liệu dưới đây lấy từ report do `python -m lab9.eval` sinh ra (đã commit trong `src/reports/`), không gõ tay.
 
-- **Run ID / eval set SHA:** baseline `E-swarm-20261118-45c8` · PR `E-fixed-20261118-45c8`, `E-seeded_regression-20261118-45c8` · eval set `45c88cc0fd55`
-- **Phiên bản:** code (commit) `20611b4` (nhánh `starter/d09`; `src/lab8/` là code gốc Day 8, không sửa) · eval set v1 (sha `45c88cc0fd55`) · metric_spec `1.0` (`config/metric_spec.yaml`) · grader (commit) `270e5ad` (`src/lab9/graders.py`) · seeds 11/22/33/44/55 · MockLLM · Python 3.14.3 cục bộ (CI chạy 3.13)
+- **Run ID / eval set SHA:** baseline `E-swarm-20261118-9557` · PR `E-fixed-20261118-9557`, `E-seeded_regression-20261118-9557` · eval set `9557997a5306`
+- **Phiên bản:** code (commit) `25eab94` (nhánh `starter/d09`; `src/lab8/` là code gốc Day 8, không sửa) · eval set v1 (sha `9557997a5306`) · metric_spec `1.0` (`config/metric_spec.yaml`) · grader (commit) `270e5ad` (`src/lab9/graders.py`) · seeds 11/22/33/44/55 · MockLLM · Python 3.14.3 cục bộ (CI chạy 3.13)
 - **Eval set:** v1, 14 item × 5 seed = 70 trial/report, nguồn `lab8_public` (ma trận T01–T14). Nhãn nằm riêng trong `labels_v1.json`, không inline. Mỗi item có `failure_modes` (FM-xx) và `provenance.from_trace` trỏ tới trial bằng chứng. 0 evaluator failure ở cả 3 report.
 - **Metric & ngưỡng** (trích `metric_spec.yaml`):
 

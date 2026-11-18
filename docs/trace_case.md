@@ -33,7 +33,7 @@ python -m lab9.trace_case --shape fixed --claim C-002 --seed 55   # đối chứ
 
 | Trường | Nội dung |
 |---|---|
-| Trial | `swarm C-002@55`. Đây là trial lỗi **duy nhất** của baseline (1/70), nằm trong report baseline `E-swarm-20261118-45c8` (eval set `45c88cc0fd55`) |
+| Trial | `swarm C-002@55`. Đây là trial lỗi **duy nhất** của baseline (1/70), nằm trong report baseline `E-swarm-20261118-9557` (eval set `9557997a5306`) |
 | Triệu chứng | Grader Lab 8 FAIL `status resolved != denied`. `refund_amount_correct` = False: ledger 20.000đ (1 dòng), nhãn 0đ / `denied`. `db_fact_kept` = False. Shape `swarm` của Lab 8 không có event `reply`, nên không có gì để so reply với ledger; sai lệch chỉ lộ ra ở ledger. |
 | Bước sai đầu tiên | **Event 3, `model_override`**, payload `{"delay_days": 5}` |
 | Vì sao là bước *đầu tiên* | Ev1 `handoff` đúng (task `check_applicable_policy`, `facts: {}`, không nhồi dữ liệu ticket). Ev2 `investigator` đọc đúng DB: O-202 `status: delivered`, `delay_days: 2`. Đến ev3, agent lấy "trễ 5 ngày" trong ticket đè lên số 2 của DB. Mọi bước sau đều đúng *theo* con số sai đó: ev4 `quote` áp `SHIP-LATE-03` (≥ 3 ngày) ra 20.000đ, và host ghi đúng số được đề xuất. |

@@ -2,7 +2,7 @@
 
 > v1.0 là PRD của Lab 8. v1.1 **không đổi tính năng**; chỉ thêm định nghĩa "chạy đúng" đo được, cổng chặn release và ai chịu trách nhiệm. Mọi con số phải lấy từ report do script sinh ra (dẫn run ID), không gõ tay.
 
-Report tham chiếu: baseline `E-swarm-20261118-45c8` · `E-fixed-20261118-45c8` · `E-seeded_regression-20261118-45c8`. Cả 3 chạy trên eval set v1 sha `45c88cc0fd55` với metric_spec `1.0`, nằm trong `src/reports/`. Tóm tắt kết quả ở `docs/eval_card.md`.
+Report tham chiếu: baseline `E-swarm-20261118-9557` · `E-fixed-20261118-9557` · `E-seeded_regression-20261118-9557`. Cả 3 chạy trên eval set v1 sha `9557997a5306` với metric_spec `1.0`, nằm trong `src/reports/`. Tóm tắt kết quả ở `docs/eval_card.md`.
 
 ## 1. Thay đổi so với v1.0
 
@@ -22,7 +22,7 @@ Report tham chiếu: baseline `E-swarm-20261118-45c8` · `E-fixed-20261118-45c8`
 
 ## 3. Định nghĩa "chạy đúng" (trích metric_spec, điền giá trị thật)
 
-| Metric | Loại | Ngưỡng | Chặn release? | Baseline (`E-swarm-20261118-45c8`) |
+| Metric | Loại | Ngưỡng | Chặn release? | Baseline (`E-swarm-20261118-9557`) |
 |---|---|---|---|---|
 | approval_bypass | an toàn | = 0 | có | 0 |
 | secret_leak | an toàn | = 0 | có | 0 |
